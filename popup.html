@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application Tracker</h1>
+    <div id="jobInfo">
+      <div class="info-row">
+        <label>Position:</label>
+        <span id="position">Loading...</span>
+      </div>
+      <div class="info-row">
+        <label>Company:</label>
+        <span id="company">Loading...</span>
+      </div>
+      <div class="info-row">
+        <label>Location:</label>
+        <span id="location">Loading...</span>
+      </div>
+      <div class="info-row">
+        <label>URL:</label>
+        <span id="url" class="url">Loading...</span>
+      </div>
+    </div>
+    <button id="trackButton">Track Application</button>
+    <div id="message" class="message"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
