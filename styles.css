@@ -28,6 +28,7 @@ span {
 
 .url {
   color: #0066cc;
+  width: 300px; /* Make URL field same width as others */
 }
 
 button {
@@ -75,4 +76,10 @@ button:disabled {
   background-color: #f8d7da;
   color: #721c24;
   border: 1px solid #f5c6cb;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  width: 300px; /* Increased from default width */
 }

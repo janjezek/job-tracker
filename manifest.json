@@ -4,14 +4,17 @@
   "version": "1.0",
   "description": "Track job applications from LinkedIn to Airtable",
   "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["https://api.airtable.com/*", "https://*.linkedin.com/*"],
+  "host_permissions": [
+    "https://api.airtable.com/*",
+    "https://*.linkedin.com/*"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "Track Job Application"
   },
   "content_scripts": [
     {
-      "matches": ["*://*.linkedin.com/jobs/*"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ],
